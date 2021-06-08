@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Agenda Multicapa</title>
+</head>
+
+<body>
+    <h1>Envio de datos</h1>
+    <div class="form" id="form" method="post">
+        <label for="Nombre" class="name" id="name">Nombre:</label>
+        <input type="text" name="nombre" id="nombre" placeholder="Ingrese un nombre" autocomplete="off">
+        <label for="Apellido" class="lastname">Apellido:</label>
+        <input type="text" name="apellido" id="apellido" placeholder="Ingrese un apellido" autocomplete="off">
+        <label for="Telefono" class="number">Telefono:</label>
+        <input type="number" name="telefono" id="telefono" placeholder="Ingrese un telefono" autocomplete="off">
+        <br>
+        <br>
+        <button class="btn_enviar" id="btn_enviar" type="submit">Enviar</button>
+        <button class="btn_obtener" id="btn_obtener" onclick="obtener()">Obtener</button>
+        <button class="btn_limpiar" id="btn_limpiar" onclick="limpiar()">Limpiar</button>
+    </div>
+    <br>
+    <h2>Registro de datos</h2>
+    <div class="table-container" id="table-container">
+        <table class="table" id="table">
+            <thead>
+              <tr>
+                <th scope="col">Nombres:</th>
+                <th scope="col">Apellidos:</th>
+                <th scope="col">Telefonos:</th>
+              </tr>
+            </thead>
+            <tbody id="contenido">
+            </tbody>
+          </table>
+        </div>
+
+        <script src="js/app.js" async></script>
+</body>
+
+</html>
